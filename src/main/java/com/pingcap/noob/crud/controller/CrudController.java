@@ -19,14 +19,12 @@ public class CrudController {
 
     @RequestMapping(value = "/crud")
     public void startCrudTest() {
-        LOG.info("crud operation start");
-        LOG.info("insert into test.user(name,age,sex) values('tidb', 5, 1)");
+        LOG.info("#####################################################");
         crudService.insertCrud();
-        LOG.info("update test.user set name = 'pingcap' where id = 1");
-        crudService.updateCrud();
-        LOG.info("delete from test.user where id = 5");
         crudService.deleteCrud();
-        LOG.info("crud operation finish");
+        crudService.updateCrud();
+        crudService.selectCrud();
+        LOG.info("#####################################################");
     }
 
 
