@@ -1,6 +1,6 @@
 package com.pingcap.noob.crud.dao;
 
-import com.pingcap.noob.pojo.t11;
+import com.pingcap.noob.pojo.tt1;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 @Repository
 public interface CrudMapper {
 
-    @Select("select * from t11")
-    public ArrayList<t11> selectT11();
+    @Select("select * from tt1")
+    public ArrayList<tt1> selectTt1();
 
 }

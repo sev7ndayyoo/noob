@@ -1,7 +1,7 @@
 package com.pingcap.noob.crud.controller;
 
 import com.pingcap.noob.crud.service.CrudService;
-import com.pingcap.noob.pojo.t11;
+import com.pingcap.noob.pojo.tt1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +17,9 @@ public class CrudController {
 
     @RequestMapping(value = "/crud")
     public void crud() {
-        ArrayList<t11> t11ArrayList = crudService.selectT11();
-        for (int i = 0; i < t11ArrayList.size(); i++) {
-            System.out.println(t11ArrayList.get(i).getC1());
+        ArrayList<tt1> tt1ArrayList = crudService.selectTt1();
+        for (int i = 0; i < tt1ArrayList.size(); i++) {
+            System.out.println(tt1ArrayList.get(i).getC1());
         }
     }
 }
