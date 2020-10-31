@@ -12,6 +12,7 @@ import java.util.ArrayList;
 @Controller
 @ResponseBody
 public class CrudController {
+    
     @Autowired
     private CrudService crudService;
 

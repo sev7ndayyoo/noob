@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 @Service
 public class CrudServiceImpl implements CrudService {
+
     @Autowired
     private CrudMapper crudMapper;
 

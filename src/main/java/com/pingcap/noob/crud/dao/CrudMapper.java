@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public interface CrudMapper {
 
     @Select("select * from tt1")
+//    @Options(fetchSize = Integer.MIN_VALUE)
     public ArrayList<tt1> selectTt1();
 
 }
