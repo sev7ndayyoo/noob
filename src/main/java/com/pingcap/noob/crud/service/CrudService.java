@@ -19,4 +19,13 @@ public interface CrudService {
     @Transactional(propagation = Propagation.REQUIRED)
     public void insertT1(t1 t1o);
 
+    public void testTransaction();
+
+    @Transactional
+    public void insertSimple();
+
+    @Transactional
+    public t1 selectSimple();
+
+
 }

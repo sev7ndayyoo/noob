@@ -20,13 +20,14 @@ public class CrudController {
 
     @RequestMapping(value = "/crud")
     public void crud() {
-        for (int i = 1; i <= 1; i++) {
-            t1 t1o = new t1();
-            t1o.setId(i);
-            t1o.setC1(1);
-            t1o.setC2(2);
-            insertAndSelect(t1o);
-        }
+//        for (int i = 1; i <= 1; i++) {
+//            t1 t1o = new t1();
+//            t1o.setId(i);
+//            t1o.setC1(1);
+//            t1o.setC2(2);
+//            insertAndSelect(t1o);
+//        }
+        crudService.testTransaction();
     }
 
     public void insertAndSelect(t1 t1o) {

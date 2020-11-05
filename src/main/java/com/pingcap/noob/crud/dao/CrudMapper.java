@@ -23,4 +23,12 @@ public interface CrudMapper {
     @Insert("insert into t1 values(#{id},#{c1},#{c2})")
     public void insertT1(t1 t1o);
 
+    @Transactional
+    @Insert("insert into t1 values(9,8,7)")
+    public void insertSimple();
+
+    @Transactional
+    @Select("select * from t1 where id = 9")
+    public t1 selectSimple();
+
 }
